@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 12mm 14mm 12mm 14mm;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    font-size: 10.5pt;
+    line-height: 1.35;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 1.5px solid #222;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  .name {
+    font-size: 18pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #0f172a;
+  }
+  .contact-info {
+    font-size: 9pt;
+    color: #475569;
+    margin-top: 3px;
+  }
+  .contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .section {
+    margin-bottom: 9px;
+  }
+  .section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #1e293b;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  .item-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 9.5pt;
+    font-style: italic;
+    color: #334155;
+    margin-bottom: 2px;
+  }
+  .date {
+    font-weight: 500;
+    font-style: normal;
+    color: #64748b;
+    font-size: 9pt;
+  }
+  ul {
+    margin-left: 14px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+  li {
+    font-size: 9.5pt;
+    color: #334155;
+    margin-bottom: 2px;
+    line-height: 1.3;
+  }
+  .skills-grid {
+    font-size: 9.5pt;
+    color: #334155;
+    line-height: 1.4;
+  }
+  .skills-label {
+    font-weight: 600;
+    color: #0f172a;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="name">Alex Rivera</div>
+    <div class="contact-info">
+      San Francisco, CA / Remote • 
+      <a href="mailto:alex.rivera.dev@gmail.com">alex.rivera.dev@gmail.com</a> • 
+      +1 (555) 382-9912 • 
+      <a href="https://linkedin.com/in/alexrivera-dev">LinkedIn</a> • 
+      <a href="https://github.com/alexrivera">GitHub</a>
+       • <a href="https://alexrivera.dev">Portfolio</a>
+    </div>
+  </div>
+
+  <!-- Education -->
+  
+  <div class="section">
+    <div class="section-title">Education</div>
+    
+    <div class="item-header">
+      <span>University of California, Berkeley</span>
+      <span class="date">May 2026</span>
+    </div>
+    <div class="item-sub">
+      <span>B.S. in Computer Science & Data Science (GPA: 3.89/4.0)</span>
+      <span></span>
+    </div>
+    
+    <div style="font-size: 9pt; color: #475569; margin-bottom: 2px;">
+      <span style="font-weight: 600;">Relevant Coursework:</span> Data Structures, Algorithms, Distributed Systems, Database Systems, Computer Security
+    </div>
+    
+    
+  </div>
+  
+
+  <!-- Technical Skills -->
+  
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      
+      <div><span class="skills-label">Languages:</span> Python, Go, SQL, TypeScript, JavaScript, C++</div>
+      
+      
+      <div><span class="skills-label">Frameworks & Libraries:</span> Express, FastAPI, React, Next.js, Node.js, Tailwind CSS</div>
+      
+      
+      <div><span class="skills-label">Infrastructure & Tools:</span> PostgreSQL, Docker, Redis, Playwright, Git, AWS, Linux</div>
+      
+    </div>
+  </div>
+  
+
+  <!-- Experience -->
+  
+  <div class="section">
+    <div class="section-title">Experience</div>
+    
+    <div class="item-header">
+      <span>Software Engineering Intern</span>
+      <span class="date">May 2024 - Aug 2024</span>
+    </div>
+    <div class="item-sub">
+      <span>CloudScale Labs</span>
+      <span>San Francisco, CA</span>
+    </div>
+    
+    <ul>
+      
+      <li>Built high-throughput asynchronous ETL pipelines in Python & FastAPI processing 2M+ records daily.</li>
+      
+      <li>Designed distributed caching with Redis & PostgreSQL, reducing p99 query latency by 42%.</li>
+      
+      <li>Created automated Playwright end-to-end testing suite integrated with GitHub Actions CI/CD.</li>
+      
+    </ul>
+    
+    
+  </div>
+  
+
+  <!-- Projects -->
+  
+  <div class="section">
+    <div class="section-title">Technical Projects</div>
+    
+    <div class="item-header">
+      <span>Autonomous Agent Pipeline <span style="font-weight: normal; font-size: 9pt; color: #64748b;">| Python, FastAPI, Gemini API, React, PostgreSQL</span></span>
+      <span class="date"><a href="https://github.com/alexrivera/agent-pipeline" style="color: #2563eb; text-decoration: none; font-size: 8.5pt;">Code Repository</a></span>
+    </div>
+    
+    <ul>
+      <li>Multi-agent orchestration system with LLM reasoning, async worker queues, and real-time dashboard.</li>
+      
+    </ul>
+    
+    
+    <div class="item-header">
+      <span>FastKV Distributed Store <span style="font-weight: normal; font-size: 9pt; color: #64748b;">| Go, gRPC, LSM-Tree, Raft</span></span>
+      <span class="date"><a href="https://github.com/alexrivera/fastkv" style="color: #2563eb; text-decoration: none; font-size: 8.5pt;">Code Repository</a></span>
+    </div>
+    
+    <ul>
+      <li>High performance key-value store with write-ahead log and Raft consensus.</li>
+      
+    </ul>
+    
+    
+  </div>
+  
+
+</body>
+</html>

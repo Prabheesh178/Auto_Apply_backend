@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.obj
+*.o
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.local
+credentials.json
+token.json
+
+# SQLite Databases & Local Storage
+*.db
+*.sqlite
+*.sqlite3
+auto_apply.db
+
+# Storage Generated Artifacts
+storage/screenshots/*.png
+storage/resumes/*.pdf
+!storage/screenshots/.gitkeep
+!storage/resumes/.gitkeep
+
+# IDEs & OS Files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
