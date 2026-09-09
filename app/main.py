@@ -6,6 +6,8 @@ from app.api import api_router
 from app.utils.seed_data import initialize_seed_data
 from app.config import settings
 
+from app.services.keep_alive import keep_alive_service
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize DB tables
@@ -16,9 +18,13 @@ async def lifespan(app: FastAPI):
     async with AsyncSessionLocal() as session:
         await initialize_seed_data(session)
 
+    # Start automated anti-sleep keep-alive pinger
+    keep_alive_service.start()
+
     yield
 
     # Cleanup
+    keep_alive_service.stop()
     await engine.dispose()
 
 app = FastAPI(
